@@ -1,0 +1,39 @@
+/* Classes are used to differentiate between elements.
+/* p.para1 { /*Looks for any p tags with the class para1 and applies the formatting to them*/
+    color: lightgreen;
+}
+/*
+p.form  {
+    color:lightpink;
+}
+p.para1.form {
+
+    color:blueviolet
+    border: 1px dashed orange;
+}
+p .para1.form { /*This is a descendant selector because of the space. Browser looks inside the p tag and finds any children elements with the classes para1 and form and styles them accordingly. */
+
+    color:blueviolet
+    border: 1px dashed orange;
+}
+
+#content {  /*Selects and formats anything with the id "content". Can put a tag before the # to be extra specific but it doesnt matter since the id is specific to a single tag. */
+    background-color: peru;
+    padding: 20px;
+}  */
+
+/* a[href] { /*Attribute selector. Chooses the tag, a with an attribute of href and formats accordingly. can be used with other tags.*/
+    /* background-color: rebeccapurple;
+} */
+
+a[href= "www.google.com"]{
+    background-color: rebeccapurple;
+}
+/*Equals sign can be changed to different operators to do different tasks
+    *= Value is included somewhere inside. a[href *= "google] would include any tag with an attribute that has the word google in it
+    $= Chooses value is at the end. For example if it was a[href *= ".com"], any tag with an attribute ending in dot com would be chosen. */
+
+p {
+    border: inherit; /*recall inheritive properties. Let us just say that there is a p tag within a div tag. The div has a set of styles applied to it. Let us just say a border and margins. the border and margins will apply to all the p tags in the div tags as if it were one block. By putting the inherit command, each individual paragraph inherits the border and margins that were otherwise only being applied to div block. 
+    margin: inherit;
+}

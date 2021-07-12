@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning HTML</title>
+</head>
+<body>
+
+    <h1>HTML Forms</h1>
+
+
+    <form>
+        <label for = "username">the id is used to give a label for the form</label>
+        <input type= "text" id ="username" name="username" placeholder ="username"> <!--No other element on the page can have an ID of username, or whatever tag u use. Its an identifier type thing to do other things to later-->
+            
+            <br><br>
+
+        <label for = "email">input email here</label>
+        <input type = "email" id = "email" name = "email" placeholder ="ur email">
+            
+            <br><br>
+
+        <label for = "password">password</label>
+        <input type = "password" name = "password" placeholder ="choose a password"> 
+    
+        <p> Select ur age</p>
+
+            <input type = "radio" name = "age" value = "0-25" id = "option1">
+            <label for = "option1">0-25</label>
+
+            <input type = "radio" name = "age" value = "26-50" id = "option2"> <!--The value tag isnt really necessary for the code to run on the frontend. It just makes it so that a backend developer can access the code a lot easier and play with stuff-->
+            <label for = "option2">26-50</label>
+
+            <input type = "radio" name = "age" value = "51+" id = "option3">
+            <label for = "option1">51+</label>
+
+        <br>
+        <br>
+
+        <label for="">Security Question</label>
+        <select name = "question" id = "question">
+            <option value="q1">What colour are your favourite pair of socks</option>
+            <option value="q2">What is ur best security question</option>
+            <option value="q3">What is ur best vegetable</option>
+            
+        </select>
+        <br>
+        <br>
+
+        <label for = "answer">Security Question answer"</label>
+        <input type = "text" name = "answer" id = "answerbox">
+
+        <br><br>
+
+        <label for = "bio">Your bio:</label><br>
+        <textarea name = "bio" id = "bio" cols = "30" rows = "10" placeholder="about you"></textarea>
+
+        <input type = "submit" value = "submit the form">
+    </form>
+
+</body>
+
+
+
+</html>
